@@ -13,7 +13,7 @@ function App() {
     <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Todos os vídeos de Homilia Diária, Ofício das Leituras, Santa Missa Ao vivo, Programa Hora da Graça e muito mais. 🙏 Conecte-se com o Padre Mario. Siga nas redes e nos ajude: 🔴You Tube(Homilia Diár..."}
+        videoDescription={"Um guia para os melhores conteudos católicos da internet🙏🙏🙏🙏🙏🙏"}
       />
 
       <Carousel
