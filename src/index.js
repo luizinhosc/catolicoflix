@@ -2,25 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import CadastroVideo from './pages/cadastro/video';
+import CadastroCategoria from './pages/cadastro/categoria'
 
-function CadastroVideo(){
-  return (
-    <div>
-      Pagina de cadastro de video
-    </div>
-  )
+const Pagina404 = () => {
+ return <div>Página 404</div>
 }
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/cadastro/video" component={CadastroVideo}/>
-      <Route path="/" component={App}/>
+      <Route path="/" component={App} exact />
+      <Route path="/cadastro/video" component={CadastroVideo} />
+      <Route path="/cadastro/categoria" component={CadastroCategoria} />
+      <Route component = {Pagina404}/>
 
     </Switch>
-  
+
   </BrowserRouter>,
-  
+
   document.getElementById('root')
 );
